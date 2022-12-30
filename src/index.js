@@ -38,9 +38,6 @@ function onLoadMore() {
         });
     });
     
-    var test = $('.gallery a').simpleLightbox();
-    test.refresh();
-    
     if (photoApiServis.pageNum > 13) {
         refs.btnMore.classList.add('is-hidden');
         Notify.failure("We're sorry, but you've reached the end of search results.");
